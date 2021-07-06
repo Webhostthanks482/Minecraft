@@ -14,20 +14,16 @@ class Config(object):
     # REQUIRED
     # Login to https://my.telegram.org and fill in these slots with the details given by it
 
-    API_ID_KEY = Config.API_ID
-    API_HASH_KEY = Config.API_HASH
-    STRING_SESSION = Config.STRING_SESSION
-    MONGO_DB_URL = Config.MONGO_DB_URL
-    with open(os.path.join(os.getcwd(), "Sibyl_System\\elevated_users.json"), "r") as f:
-        data = json.load(f)
-    SIBYL = data["SIBYL"]
-    ENFORCERS = data["ENFORCERS"]
-    INSPECTORS = data["INSPECTORS"]
-    Sibyl_logs = Config.Sibyl_logs
-    Sibyl_approved_logs = Config.Sibyl_approved_logs
-    GBAN_MSG_LOGS = Config.GBAN_MSG_LOGS
-    BOT_TOKEN = Config.BOT_TOKEN
-
+    API_ID_KEY = 4726773
+    API_HASH_KEY = "34fa7c7ece67fbadb63f7823172e46a3"
+    STRING_SESSION = "1AZWarzgBu3ecdnighnLB8jtb0rIIZu2UMbrmVLhEiEeGRFcv_Hiy9DYYs6NtAII2kGOEaOdGTwwBLme9fbiAY3IRQxosfiEE84B6cDNQIdatUs0goVNF4uj7N9x3Zi6aWbu-P3GDw_nS36qGX369uvCZO0f22MGMqMovT4o2IH3a9wD9R2XChs_CM0iwaU7SCjG4iCo7vtK26aAPUCiAdp6jVLC3pbQ6JghrGayWwPj7ttlr2AOzRaznQqRH71jpBWIGtfmrQbwVoo7RrfS6rV5z7AGPQCCaw-dO_iuw6TUt1TYYdNmcMW5Rk1qng0hiWXk2DS7nFUYabKpCL1pfVkiFDyy3u3g="
+    MONGO_DB_URL = "mongodb+srv://userbot:userbot@cluster0.x5kew.mongodb.net/myFirstDatabase?retryWrites=true&w=majority"
+    SIBYL = 1690307965
+    ENFORCERS = 1732236209
+    INSPECTORS = 1511373882
+    Sibyl_logs = -1001216545116
+    Sibyl_approved_logs = -1001216545116
+    BOT_TOKEN = "1729614497:AAFj_7Psr0gV59atqmE8pPWe59xxuCzpurM"
 class Production(Config):
     LOGGER = True
 
